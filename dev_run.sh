@@ -1,3 +1,1 @@
-docker run \
-    --name testrets \
-    librets
+docker run --name dockerlibrets -d boojrets tail -f /dev/null

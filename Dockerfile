@@ -9,6 +9,8 @@ RUN yum install --assumeyes \
     libcurl-devel \ 
     gcc-c++ \ 
     swig \ 
+    make \
+    cmake \
     python-devel; yum clean all;
-ADD setup.sh /root/setup.sh
-RUN /root/setup.sh
+ADD setup.sh /tmp/setup.sh
+RUN /tmp/setup.sh
